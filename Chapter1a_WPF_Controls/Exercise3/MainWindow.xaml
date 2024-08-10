@@ -7,6 +7,16 @@
         mc:Ignorable="d"
         Title="Grow and shrink" Height="250" Width="730">
     <Grid>
-        
+        <RepeatButton Content="Grow" HorizontalAlignment="Left" Margin="10,20,0,0" VerticalAlignment="Top" Width="70" Click="GrowButton_Click"/>
+        <RepeatButton Content="Shrink" HorizontalAlignment="Left" Margin="90,20,0,0" VerticalAlignment="Top" Width="70" Click="ShrinkButton_Click"/>
+
+        <Canvas HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10 50 0 0"
+                Height="175" Width="710" Name="paperCanvas"
+                Background="LightGray">
+            <Rectangle HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,10,0,0"
+                       Height="100" Width="100" Name="theRectangle"
+                       Stroke="Black" Fill="Orange"/>
+        </Canvas>
+
     </Grid>
 </Window>

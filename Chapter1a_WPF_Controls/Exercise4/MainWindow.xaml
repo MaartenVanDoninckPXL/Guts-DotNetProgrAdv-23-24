@@ -6,5 +6,41 @@
         xmlns:local="clr-namespace:Exercise4"
         mc:Ignorable="d"
         Title="Toggle and group" Height="350" Width="200">
-    
+    <Canvas>
+        <ToggleButton HorizontalAlignment="Left" VerticalAlignment="Top"
+                  Width="40" Canvas.Left="15" Canvas.Top="20">
+            <ToggleButton.Style>
+                <Style TargetType="ToggleButton">
+                    <Setter Property="Content" Value="Aan"/>
+                    <Style.Triggers>
+                        <Trigger Property="IsChecked" Value="False">
+                            <Setter Property="Content" Value="Uit"/>
+                        </Trigger>
+                        <Trigger Property="IsChecked" Value="True">
+                            <Setter Property="Content" Value="Aan"/>
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </ToggleButton.Style>
+        </ToggleButton>
+
+        <GroupBox HorizontalAlignment="Left" VerticalAlignment="Top"
+                  Height="100" Width="150" Canvas.Left="15" Canvas.Top="50"
+                  Header="Leeftijd">
+            <StackPanel>
+                <CheckBox IsChecked="True" Content="0-18"/>
+                <CheckBox Content="19-50"/>
+                <CheckBox Content="50-80"/>
+            </StackPanel>
+        </GroupBox>
+
+        <GroupBox HorizontalAlignment="Left" VerticalAlignment="Top"
+                  Height="100" Width="150" Canvas.Left="15" Canvas.Top="175"
+                  Header="Geslacht">
+            <StackPanel>
+                <RadioButton IsChecked="True" Content="Man"/>
+                <RadioButton Content="Vrouw"/>
+            </StackPanel>
+        </GroupBox>
+    </Canvas>
 </Window>

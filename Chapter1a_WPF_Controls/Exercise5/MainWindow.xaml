@@ -5,8 +5,61 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Exercise5"
         mc:Ignorable="d"
-         Title="Countries treeview" Height="350" Width="500">
+        Title="Countries treeview" Height="350" Width="500">
     <Grid>
-        
+        <TreeView>
+            <TreeViewItem Header="North America">
+                <TreeViewItem Margin="0 5 0 0">
+                    <TreeViewItem.Header>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="Canada"/>
+                            <Image Source="images/canada.png" Width="20" Margin="5 0 0 0"/>
+                        </StackPanel>
+                    </TreeViewItem.Header>
+                </TreeViewItem>
+                <TreeViewItem Margin="0 5 0 0">
+                    <TreeViewItem.Header>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="Mexico"/>
+                            <Image Source="images/mexico.png" Width="20" Margin="5 0 0 0"/>
+                        </StackPanel>
+                    </TreeViewItem.Header>
+                </TreeViewItem>
+                <TreeViewItem Margin="0 5 0 0">
+                    <TreeViewItem.Header>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="USA"/>
+                            <Image Source="images/usa.png" Width="20" Margin="5 0 0 0"/>
+                        </StackPanel>
+                    </TreeViewItem.Header>
+                </TreeViewItem>
+            </TreeViewItem>
+            <TreeViewItem Header="South America">
+                <TreeViewItem Margin="0 5 0 0">
+                    <TreeViewItem.Header>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="Argentina"/>
+                            <Image Source="images/argentina.png" Width="20" Margin="5 0 0 0"/>
+                        </StackPanel>
+                    </TreeViewItem.Header>
+                </TreeViewItem>
+                <TreeViewItem Margin="0 5 0 0">
+                    <TreeViewItem.Header>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="Brazil"/>
+                            <Image Source="images/brazil.png" Width="20" Margin="5 0 0 0"/>
+                        </StackPanel>
+                    </TreeViewItem.Header>
+                </TreeViewItem>
+                <TreeViewItem Margin="0 5 0 0">
+                    <TreeViewItem.Header>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="Uruguay"/>
+                            <Image Source="images/uruguay.png" Width="20" Margin="5 0 0 0"/>
+                        </StackPanel>
+                    </TreeViewItem.Header>
+                </TreeViewItem>
+            </TreeViewItem>
+        </TreeView>
     </Grid>
 </Window>
